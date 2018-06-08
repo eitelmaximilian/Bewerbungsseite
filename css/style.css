@@ -1,0 +1,50 @@
+/*
+---------------------------------STYLESHEET Bewerbung Maximilian Eitel-----------------------------------------
+
+
+------------------------------
+Inhalt:
+
+S  -    SASS 
+I  -    Allgemein
+II -    Titel
+III-    Vorstellung
+IV -    Skills
+V  -    Works
+VI -    Kontakt/Impressum
+------------------------------
+
+*/
+
+/*-------------------    S - SASS   ----------------------*/
+
+
+/*-------------------    I - Allgemein   ----------------------*/
+
+/*Fonts*/
+
+
+
+body{
+     font-family: "Alegreya",serif;
+     color:#eeeff4;
+     background-color:#2a7130;
+}
+
+h1{
+    font-family: "Alegreya Sans", sans-serif;
+    color: #eeeff4; 
+}
+
+/*-------------------    II - Titel   ----------------------*/
+
+.titel{
+    background-color: #303030;
+    width: 1024px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titel h1{
+    color: #f49017;
+}
