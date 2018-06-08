@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Alegreya");
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,400");
 /*
 .
 
@@ -15,6 +15,9 @@ ___created 2018 Maximilian Eitel___
 
 .
 */
+/*Colors*/
+/*Fonts*/
+/*Bildschirmgrößen*/
 /* line 1, ../scss/base/_base.scss */
 body {
   background-color: #2a7130;
@@ -25,24 +28,65 @@ body {
   margin: 0px;
 }
 
-/* line 4, ../scss/structure/_container.scss */
-.titel {
-  background-color: #303030;
+/* line 5, ../scss/structure/_container.scss */
+.container {
   width: screensize;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
-  height: screensize-10px;
+  padding-bottom: 50px;
+  margin-bottom: 15px;
+}
+/* line 13, ../scss/structure/_container.scss */
+.container p {
+  padding-left: 40px;
+  padding-right: 10px;
 }
 
-/* line 12, ../scss/structure/_container.scss */
-.titel h1 {
+/* line 19, ../scss/structure/_container.scss */
+#titel {
+  background-color: #303030;
+}
+/* line 22, ../scss/structure/_container.scss */
+#titel h1 {
   margin-top: 0px;
+  padding-top: 100px;
+}
+/* line 26, ../scss/structure/_container.scss */
+#titel h2 {
+  margin-top: 20 px;
+  padding-bottom: 100px;
+  margin-bottom: 0px;
+}
+
+/* line 35, ../scss/structure/_container.scss */
+#aboutme h1, #skills h1 {
+  margin-top: 0px;
+  padding-top: 100px;
+}
+/* line 39, ../scss/structure/_container.scss */
+#aboutme ul, #skills ul {
+  text-align: left;
+  list-style-type: none;
+}
+/* line 44, ../scss/structure/_container.scss */
+#aboutme ul li, #skills ul li {
+  padding-top: 5px;
+}
+
+/* line 50, ../scss/structure/_container.scss */
+#aboutme {
+  background-color: #f49017;
+}
+
+/* line 56, ../scss/structure/_container.scss */
+#skills {
+  background-color: #303030;
 }
 
 /* line 4, ../scss/modules/_typography.scss */
 body {
-  font-family: "Alegreya",serif;
+  font-family: "Alegreya", serif;
   color: #eeeff4;
 }
 
@@ -51,9 +95,64 @@ h1 {
   font-family: "Alegreya Sans", sans-serif;
   color: #eeeff4;
   text-align: center;
+  font-size: 3em;
 }
 
-/* line 15, ../scss/modules/_typography.scss */
-.titel h1 {
+/* line 16, ../scss/modules/_typography.scss */
+h2 {
+  font-family: "Alegreya Sans", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 2.4em;
+}
+
+/* line 24, ../scss/modules/_typography.scss */
+#titel h1 {
   color: #f49017;
 }
+/* line 27, ../scss/modules/_typography.scss */
+#titel h2 {
+  color: #eeeff4;
+}
+
+/* line 34, ../scss/modules/_typography.scss */
+#aboutme h1,
+#skills h1 {
+  padding-top: 50px;
+  font-size: 2em;
+}
+
+/*Desktop-Groesse*/
+@media all and (min-width: 1024px) {
+  /* line 4, ../scss/mediaqueries/_proportions.scss */
+  .container {
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* line 11, ../scss/mediaqueries/_proportions.scss */
+  #titel {
+    margin-top: 15px;
+  }
+  /* line 14, ../scss/mediaqueries/_proportions.scss */
+  #titel h1 {
+    font-size: 3.7em;
+  }
+
+  /* line 20, ../scss/mediaqueries/_proportions.scss */
+  #aboutme h1, #skills h1 {
+    text-align: left;
+    padding-left: 40px;
+    font-size: 2.3em;
+  }
+}
+/*Tablet-Landscape*/
+/*Tablet-Hoch*/
+@media all and (min-width: 480px) {
+  /* line 35, ../scss/mediaqueries/_proportions.scss */
+  p {
+    padding-right: 40px !important;
+  }
+}
+/*Smartphone*/

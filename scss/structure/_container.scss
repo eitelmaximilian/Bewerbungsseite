@@ -1,14 +1,60 @@
-body{
+body {
     margin: 0px;
 }
-.titel{
-    background-color: #303030;
+
+.container {
     width: screensize;
-	margin-left: 0px;
-	margin-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-top: 0px;
-    height: screensize-10px;
+            padding-bottom: 50px;
+margin-bottom: 15px;
+    
+    p{
+        padding-left: 40px;
+        padding-right: 10px;
+    }
 }
-.titel h1{
-    margin-top: 0px;    
+
+#titel {
+
+    background-color: $schwarz;
+    h1 {
+        margin-top: 0px;
+        padding-top: 100px
+    }
+    h2 {
+        margin-top: 20 px;
+        padding-bottom: 100px;
+        margin-bottom: 0px;
+    }
 }
+   
+
+#aboutme, #skills{
+h1 {
+        margin-top: 0px;
+        padding-top: 100px;
+    }
+    ul {
+        text-align: left;
+        list-style-type: none;
+       
+
+        li {
+            padding-top: 5px;
+        }
+    }
+}
+
+#aboutme {
+
+    background-color: $orange;
+
+}
+
+#skills {
+    background-color: $schwarz;
+    
+}
+  
