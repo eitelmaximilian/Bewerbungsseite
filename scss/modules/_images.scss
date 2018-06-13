@@ -1,0 +1,22 @@
+.video-bg {
+    position: absolute;
+    z-index: -1000;
+    min-width: 100%;
+    min-height: 100%;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+    border-radius: 5px;
+}
+.imagecontainer{
+    text-align: center;
+}

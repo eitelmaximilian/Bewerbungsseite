@@ -1,15 +1,8 @@
 /*Desktop-Groesse*/
 
 @media all and (min-width: $breakdesktop) {
-    .container {
-        width: $breakdesktop;
-        margin-left: auto;
-        margin-right: auto;
-        
-
-    }
+   
     #titel {
-        margin-top: 15px;
         
         h1{
             font-size: 3.7em;
@@ -18,8 +11,6 @@
 
     #aboutme, #skills {
         h1 {
-            text-align: left;
-            padding-left: 40px;
             font-size: 2.3em;
         }
     }

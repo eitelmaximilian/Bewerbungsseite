@@ -6,51 +6,114 @@
     <title>Maximilian Eitel</title>
 
     <link rel="stylesheet" href="./css/main.css">
-    <script src="js/bin/materialize.min.js"></script>
+    <link rel="stylesheet" href="./css/jquery.fullPage.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.fullPage.js"></script>
+    <script src="js/magic.js"></script>
 
 </head>
 
 <body>
+    <div id="fullpage">
 
-    <div id="titel" class="container">
-        <h1>Bewerbung</h1>
-        <h2>Maximilian Eitel</h2>
-    </div>
+        <div class="section background-wrap" id="titel">
+            <video class="video-bg" preload="auto" data-autoplay loop="loop" muted="muted"> <source src="image/titel.mp4" type="video/mp4">Video not supported</video>
 
-    <div id="aboutme" class="container">
-        <h1>Darf ich mich vorstellen? </h1>
-        
-        <p> Hallo, ich bin Maximilian Eitel und ich möchte mich mithilfe dieser Webseite vorstellen. 
-            <br> 
-            <br>
-            Nach meinem Studium der Medienproduktion und -technik in Amberg, das ich mit einem Bachelor-Abschluss beendet habe, habe ich 10 Monate im Fotostudio tm-Studios in Fürth als Mediadesigner gearbeitet. Mein Aufgabenfeld betrug neben der Bildretusche auch das Programmieren von Applescript-Skripten und Stapelverarbeitungs-Programmen für Photoshop.
-            <br>
-            <br>
-            Meine Leidenschaft seit meinem Studium ist aber das Designen und Umsetzen von Webseiten. In meinem Praxissemester konnte ich in dem Bereicht wertvolle Erfahrungen im Agenturalltag sammeln. Ich war hier für die Erstellung und Pflege von diversen Webseiten verantwortlich und wurde schnell mit eigenen Projekten vertraut.
-        
-        </p>
-        
-       <!-- <ul>
-            <li>Webdesigner/Frontendentwickler</li>
-            <li>Blablablablabla</li>
-            <li>Studium: Bachelor Medienproduktion</li>
-            <li>Blablablablbalblblblblblbl</li>
-            <li>Hobbies: Musik, Fotografie, ...</li>
-        </ul>-->
-    </div>
+            <div class="content-wrapper">
 
-   <div id="skills" class="container">
-        <h1>Skills </h1>
-        <ul>
-            <li>Html</li>
-            <li>Css</li>
-            <li>Javascript</li>
-            <li>Wordpress</li>
-            <li>Photoshop<li>
-        </ul>
+                <div id="bewerbung" class="underline">
+                    <h1 id="bewerbungh1">Bewerbung</h1>
+                </div>
+
+                <h2 id="name">Maximilian Eitel</h2>
+
+
+
+            </div>
+        </div>
+
+
+
+        <div class="section" id="aboutme">
+            <div id="scrollaboutme" class="scrollable">
+
+
+
+
+                <h1>Darf ich mich vorstellen? </h1>
+
+                <p> Hallo, ich bin Maximilian Eitel und ich möchte mich mithilfe dieser Webseite vorstellen.
+                    <br>
+                    <br> Nach meinem Studium der Medienproduktion und -technik in Amberg, das ich mit einem Bachelor-Abschluss beendet habe, habe ich 10 Monate im Fotostudio tm-Studios in Fürth als Mediadesigner gearbeitet. Mein Aufgabenfeld betrug neben der Bildretusche auch das Programmieren von Applescript-Skripten und Stapelverarbeitungs-Programmen für Photoshop.
+                    <br>
+                    <br> Meine Leidenschaft seit meinem Studium ist aber das Designen und Umsetzen von Webseiten. In meinem Praxissemester konnte ich in dem Bereicht wertvolle Erfahrungen im Agenturalltag sammeln. Ich war hier für die Erstellung und Pflege von diversen Webseiten verantwortlich und wurde schnell mit eigenen Projekten vertraut.
+
+                </p>
+
+            </div>
+        </div>
+
+
+
+        <div class="section background-wrap" id="skills">
+            <video class="video-bg" preload="auto" data-autoplay loop="loop" muted="muted"> <source src="image/Aufnahme_2018_06_11_10_30_22_594.mp4" type="video/mp4">Video not supported</video>
+
+            <div id="skillwrapper">
+                <h1>Skills </h1>
+                <ul>
+                    <li>
+                        <div id="html-bar">
+                            <p class="bartext">HTML</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="css-bar">
+                            <p class="bartext">CSS</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="js-bar">
+                            <p class="bartext">JavaScript</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="wp-bar">
+                            <p class="bartext">WordPress</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div id="ps-bar">
+                            <p class="bartext">PhotoShop</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section" id="works">
+            <div class="slide">
+                <h1>test1</h1>
+            </div>
+            <div class="slide">
+                <h1>test2</h1>
+            </div>
+            <div class="slide">
+                <h1>test3</h1>
+            </div>
+            <div class="slide">
+                <h1>test4</h1>
+            </div>
+        </div>
+        <div class="section" id="kontakt">
+            <h1>kontakt</h1>
+        </div>
+
     </div>
 
 
 </body>
+
+
 
 </html>

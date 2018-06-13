@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Alegreya");
-@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,400");
+@charset "UTF-8";
 /*
 .
 
@@ -13,146 +12,319 @@ ___created 2018 Maximilian Eitel___
 
 
 
+
+
 .
 */
 /*Colors*/
 /*Fonts*/
 /*Bildschirmgrößen*/
-/* line 1, ../scss/base/_base.scss */
+@import url("https://fonts.googleapis.com/css?family=Alegreya");
+@import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,400");
 body {
   background-color: #2a7130;
 }
 
-/* line 1, ../scss/structure/_container.scss */
-body {
-  margin: 0px;
+.scrollable p {
+  color: brown;
 }
 
-/* line 5, ../scss/structure/_container.scss */
-.container {
-  width: screensize;
-  margin-left: 0px;
-  margin-right: 0px;
-  margin-top: 0px;
-  padding-bottom: 50px;
-  margin-bottom: 15px;
-}
-/* line 13, ../scss/structure/_container.scss */
-.container p {
-  padding-left: 40px;
-  padding-right: 10px;
-}
-
-/* line 19, ../scss/structure/_container.scss */
-#titel {
-  background-color: #303030;
-}
-/* line 22, ../scss/structure/_container.scss */
 #titel h1 {
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 20px;
+  color: #f49016 !important;
 }
-/* line 26, ../scss/structure/_container.scss */
+
 #titel h2 {
   margin-top: 20 px;
   padding-bottom: 100px;
   margin-bottom: 0px;
 }
 
-/* line 35, ../scss/structure/_container.scss */
-#aboutme h1, #skills h1 {
-  margin-top: 0px;
-  padding-top: 100px;
+#scrollaboutme {
+  max-height: 50%;
+  overflow-y: scroll;
 }
-/* line 39, ../scss/structure/_container.scss */
-#aboutme ul, #skills ul {
+
+#scrollaboutme p {
+  padding-left: 20px;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#aboutme h1,
+#skills h1 {
+  margin-top: 0px;
+  padding-top: 20px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+#aboutme ul,
+#skills ul {
   text-align: left;
   list-style-type: none;
+  text-align: left;
+  padding-left: 20px;
 }
-/* line 44, ../scss/structure/_container.scss */
-#aboutme ul li, #skills ul li {
+
+#aboutme ul li,
+#skills ul li {
   padding-top: 5px;
 }
 
-/* line 50, ../scss/structure/_container.scss */
-#aboutme {
-  background-color: #f49017;
+#aboutme, #works {
+  background-color: #f49016;
 }
 
-/* line 56, ../scss/structure/_container.scss */
-#skills {
+#skills h1 {
+  color: #f49016 !important;
+}
+
+.content-wrapper {
+  z-index: 2;
+}
+
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+
+#skillwrapper {
+  background-color: #eeeff4;
+  z-index: 100;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+#skillwrapper ul {
+  margin-left: 10px;
+  color: #eeeff4;
+  padding-bottom: 20px;
+}
+
+#skillwrapper .bartext {
+  margin: 10px 0px 0px 0px !important;
+  padding-left: 10px;
+}
+
+#kontakt {
   background-color: #303030;
 }
 
-/* line 4, ../scss/modules/_typography.scss */
-body {
-  font-family: "Alegreya", serif;
-  color: #eeeff4;
+animate-bar {
+  -webkit-transition: width 1s ease-in-out;
+  -moz-transition: width 1s ease-in-out;
+  -o-transition: width 1s ease-in-out;
+  transition: width 1s ease-in-out;
 }
 
-/* line 9, ../scss/modules/_typography.scss */
+#html-bar {
+  background-color: #f49016;
+  width: 20%;
+  border-radius: 14px;
+  opacity: 0;
+  -webkit-transition: width 1s, opacity 1s ease-in-out;
+  -moz-transition: width 1s, opacity 1s ease-in-out;
+  -o-transition: width 1s, opacity 1s ease-in-out;
+  transition: width 1s, opacity 1s ease-in-out;
+}
+
+#css-bar {
+  background-color: #f49016;
+  width: 20%;
+  opacity: 0;
+  border-radius: 14px;
+  -webkit-transition: width 1s, opacity 1s ease-in-out;
+  -moz-transition: width 1s, opacity 1s ease-in-out;
+  -o-transition: width 1s, opacity 1s ease-in-out;
+  transition: width 1s, opacity 1s ease-in-out;
+}
+
+#js-bar {
+  background-color: #f49016;
+  width: 20%;
+  opacity: 0;
+  border-radius: 14px;
+  -webkit-transition: width 1s, opacity 1s ease-in-out;
+  -moz-transition: width 1s, opacity 1s ease-in-out;
+  -o-transition: width 1s, opacity 1s ease-in-out;
+  transition: width 1s, opacity 1s ease-in-out;
+}
+
+#wp-bar {
+  background-color: #f49016;
+  width: 20%;
+  opacity: 0;
+  border-radius: 14px;
+  -webkit-transition: width 1s, opacity 1s ease-in-out;
+  -moz-transition: width 1s, opacity 1s ease-in-out;
+  -o-transition: width 1s, opacity 1s ease-in-out;
+  transition: width 1s, opacity 1s ease-in-out;
+}
+
+#ps-bar {
+  background-color: #f49016;
+  width: 20%;
+  opacity: 0;
+  border-radius: 14px;
+  -webkit-transition: width 1s, opacity 1s ease-in-out;
+  -moz-transition: width 1s, opacity 1s ease-in-out;
+  -o-transition: width 1s, opacity 1s ease-in-out;
+  transition: width 1s, opacity 1s ease-in-out;
+}
+
+.animate-html-bar {
+  width: 80% !important;
+  opacity: 1 !important;
+}
+
+.animate-css-bar {
+  width: 80% !important;
+  opacity: 1 !important;
+}
+
+.animate-js-bar {
+  width: 60% !important;
+  opacity: 1 !important;
+}
+
+.animate-wp-bar {
+  width: 70% !important;
+  opacity: 1 !important;
+}
+
+.animate-ps-bar {
+  width: 75% !important;
+  opacity: 1 !important;
+}
+
+#bewerbung {
+  text-align: center;
+}
+
+#bewerbung h1 {
+  display: inline-block;
+  position: relative;
+}
+
+#bewerbung h1:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  transform: translate(-70%);
+  background-color: #f49016;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+#bewerbung h1.change:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+#name, #bewerbung {
+  opacity: 0;
+  -webkit-transition: all 1s ease-in-out 1s;
+  transition: all 1s ease-in-out 1s;
+}
+
+#bewerbung.visible, #name.visible {
+  opacity: 1;
+}
+
+.video-bg {
+  position: absolute;
+  z-index: -1000;
+  min-width: 100%;
+  min-height: 100%;
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: auto;
+  border-radius: 5px;
+}
+
+.imagecontainer {
+  text-align: center;
+}
+
+body {
+  font-family: "Alegreya Sans", sans-serif !important;
+  color: #eeeff4 !important;
+}
+
+body p {
+  font-size: 31px;
+}
+
+body li {
+  font-size: 31px;
+}
+
 h1 {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans", sans-serif !important;
   color: #eeeff4;
   text-align: center;
   font-size: 3em;
 }
 
-/* line 16, ../scss/modules/_typography.scss */
 h2 {
-  font-family: "Alegreya Sans", sans-serif;
+  font-family: "Alegreya Sans", sans-serif !important;
   font-weight: 100;
   text-align: center;
   font-size: 2.4em;
 }
 
-/* line 24, ../scss/modules/_typography.scss */
 #titel h1 {
-  color: #f49017;
-}
-/* line 27, ../scss/modules/_typography.scss */
-#titel h2 {
-  color: #eeeff4;
+  font-size: 5em;
+  color: #f49016 !important;
 }
 
-/* line 34, ../scss/modules/_typography.scss */
-#aboutme h1,
-#skills h1 {
-  padding-top: 50px;
-  font-size: 2em;
+#titel h2 {
+  color: #eeeff4 !important;
+}
+
+#titel p {
+  color: #303030;
+  padding: 0 0 12px 0;
+  text-align: center;
 }
 
 /*Desktop-Groesse*/
 @media all and (min-width: 1024px) {
-  /* line 4, ../scss/mediaqueries/_proportions.scss */
-  .container {
-    width: 1024px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* line 11, ../scss/mediaqueries/_proportions.scss */
-  #titel {
-    margin-top: 15px;
-  }
-  /* line 14, ../scss/mediaqueries/_proportions.scss */
   #titel h1 {
     font-size: 3.7em;
   }
-
-  /* line 20, ../scss/mediaqueries/_proportions.scss */
   #aboutme h1, #skills h1 {
-    text-align: left;
-    padding-left: 40px;
     font-size: 2.3em;
   }
 }
+
 /*Tablet-Landscape*/
 /*Tablet-Hoch*/
 @media all and (min-width: 480px) {
-  /* line 35, ../scss/mediaqueries/_proportions.scss */
   p {
     padding-right: 40px !important;
   }
 }
+
 /*Smartphone*/

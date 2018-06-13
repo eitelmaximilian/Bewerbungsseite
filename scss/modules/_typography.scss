@@ -2,19 +2,26 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:100,400');
 
 body {
-    font-family: $serif;
-    color: $weiss;
+    font-family: $sansserif !important;
+    color: $weiss !important;
+    
+    p{
+        font-size:  31px;
+    }
+    li{
+        font-size: 31px;
+    }
 }
 
 h1 {
-    font-family: $sansserif;
+    font-family: $sansserif !important;
     color: $weiss;
     text-align: center;
-    font-size: 3em;
+        font-size: 3em;
 }
 
 h2 {
-    font-family: $sansserif;
+    font-family: $sansserif !important;
     font-weight: 100;
     text-align: center;
     font-size: 2.4em
@@ -22,17 +29,16 @@ h2 {
 
 #titel {
     h1 {
-        color: $orange;
+        font-size: 5em;
+        color: $orange !important;
     }
     h2 {
-        color: $weiss;
+        color: $weiss !important;
     }
-}
-
-#aboutme,
-#skills {
-    h1 {
-        padding-top: 50px;
-        font-size: 2em;
+    
+    p {
+        color: $schwarz;
+        padding: 0 0 12px 0;
+        text-align: center;
     }
 }

@@ -1,0 +1,140 @@
+animate-bar {
+    -webkit-transition: width 1s ease-in-out;
+    -moz-transition: width 1s ease-in-out;
+    -o-transition: width 1s ease-in-out;
+    transition: width 1s ease-in-out;
+
+
+}
+
+#html-bar {
+    background-color: $orange;
+    width: 20%;
+    border-radius: $borderbar;
+    opacity: 0;
+
+    -webkit-transition: width 1s, opacity 1s ease-in-out;
+    -moz-transition: width 1s, opacity 1s ease-in-out;
+    -o-transition: width 1s, opacity 1s ease-in-out;
+    transition: width 1s, opacity 1s ease-in-out;
+}
+
+#css-bar {
+    background-color: $orange;
+    width: 20%;
+    opacity: 0;
+    border-radius: $borderbar;
+
+    -webkit-transition: width 1s, opacity 1s ease-in-out;
+    -moz-transition: width 1s, opacity 1s ease-in-out;
+    -o-transition: width 1s, opacity 1s ease-in-out;
+    transition: width 1s, opacity 1s ease-in-out;
+}
+
+#js-bar {
+    background-color: $orange;
+    width: 20%;
+    opacity: 0;
+    border-radius: $borderbar;
+
+    -webkit-transition: width 1s, opacity 1s ease-in-out;
+    -moz-transition: width 1s, opacity 1s ease-in-out;
+    -o-transition: width 1s, opacity 1s ease-in-out;
+    transition: width 1s, opacity 1s ease-in-out;
+}
+
+#wp-bar {
+    background-color: $orange;
+    width: 20%;
+    opacity: 0;
+    border-radius: $borderbar;
+
+    -webkit-transition: width 1s, opacity 1s ease-in-out;
+    -moz-transition: width 1s, opacity 1s ease-in-out;
+    -o-transition: width 1s, opacity 1s ease-in-out;
+    transition: width 1s, opacity 1s ease-in-out;
+}
+
+#ps-bar {
+    background-color: $orange;
+    width: 20%;
+    opacity: 0;
+    border-radius: $borderbar;
+
+    -webkit-transition: width 1s, opacity 1s ease-in-out;
+    -moz-transition: width 1s, opacity 1s ease-in-out;
+    -o-transition: width 1s, opacity 1s ease-in-out;
+    transition: width 1s, opacity 1s ease-in-out;
+}
+
+.animate-html-bar {
+    width: 80% !important;
+    opacity: 1 !important;
+}
+
+.animate-css-bar {
+    width: 80% !important;
+    opacity: 1 !important;
+
+}
+
+.animate-js-bar {
+    width: 60% !important;
+    opacity: 1 !important;
+
+}
+
+.animate-wp-bar {
+    width: 70% !important;
+    opacity: 1 !important;
+
+}
+
+.animate-ps-bar {
+    width: 75% !important;
+    opacity: 1 !important;
+
+}
+
+
+#bewerbung{
+    text-align: center;
+    
+    h1 {
+        display: inline-block;
+        position: relative;
+    }
+    
+    h1:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        transform: translate(-70%);
+        background-color: $orange;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+    h1.change:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+
+}
+
+
+#name, #bewerbung{
+    opacity: 0;
+       -webkit-transition: all 1s ease-in-out 1s;
+     transition: all 1s ease-in-out 1s;
+}
+
+#bewerbung.visible,#name.visible{
+    opacity: 1;
+}
