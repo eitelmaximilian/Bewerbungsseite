@@ -22,7 +22,7 @@ ___created 2018 Maximilian Eitel___
 @import url("https://fonts.googleapis.com/css?family=Alegreya");
 @import url("https://fonts.googleapis.com/css?family=Alegreya+Sans:100,400");
 body {
-  background-color: #2a7130;
+  background-color: #303030;
 }
 
 .scrollable p {
@@ -267,6 +267,56 @@ img {
   text-align: center;
 }
 
+#lto {
+  margin: 0 auto;
+  width: 75%;
+}
+
+.back {
+  background-color: gray;
+  color: aliceblue;
+}
+
+#flip-container {
+  position: relative;
+  margin: 10px auto;
+  width: 800px;
+  height: 500px;
+  z-index: 1;
+}
+
+#flip-container {
+  perspective: 1000;
+}
+
+#lto {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 1.0s linear;
+}
+
+#flip-container:focus #lto {
+  transform: rotateY(180deg);
+}
+
+.face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.face.back {
+  display: block;
+  transform: rotateY(180deg);
+  box-sizing: border-box;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background-color: #aaa;
+}
+
 body {
   font-family: "Alegreya Sans", sans-serif !important;
   color: #eeeff4 !important;
@@ -306,6 +356,14 @@ h2 {
 #titel p {
   color: #303030;
   padding: 0 0 12px 0;
+  text-align: center;
+}
+
+#kontakt a {
+  color: #eeeff4;
+}
+
+#works p {
   text-align: center;
 }
 

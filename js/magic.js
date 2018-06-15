@@ -16,9 +16,13 @@ $(document).ready(function () {
     $('#fullpage').fullpage({
         normalScrollElements: '.scrollable',
 
-        anchors: ['firstPage', 'secondPage', 'thirdPage'],
+        loopHorizontal: true,
+        continuousHorizontal: true,
+        fadingEffect: true,
+
+        anchors: ['_intro', '_aboutme', '_skills', '_works', '_contact'],
         afterLoad: function (anchorLink) {
-            if (anchorLink === "thirdPage") {
+            if (anchorLink === '_skills') {
 
                 element = document.getElementById("html-bar");
                 element.classList.add("animate-html-bar");
@@ -30,7 +34,7 @@ $(document).ready(function () {
                 element.classList.add("animate-wp-bar");
                 element = document.getElementById("ps-bar");
                 element.classList.add("animate-ps-bar");
-            } else if (anchorLink === "firstPage") {
+            } else if (anchorLink === "_intro") {
 
 
                 //Unterstrich Animation
@@ -41,7 +45,7 @@ $(document).ready(function () {
                         element.classList.add("visible");
 
                     },
-                   1000
+                    1000
                 );
 
                 setTimeout(
